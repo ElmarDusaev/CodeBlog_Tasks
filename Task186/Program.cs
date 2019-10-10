@@ -48,10 +48,13 @@ namespace Task186
         {
             HashSet<int> nod = new HashSet<int>();
 
-            for (int i = 2; i <= number; i++)
+            for (int i = 2; i < number/2; i++)
             {
                 if (number % i == 0) nod.Add(i);
             }
+
+            nod.Add(number);
+
             return nod;
         }
     }
